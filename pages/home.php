@@ -1,0 +1,21 @@
+<?php include_once("analyticstracking.php") ?>
+
+<link rel="stylesheet" type="text/css" href="css/responsiveslides.css" />
+<div id="home">
+<!-- begin slideshow  -->
+<ul class="rslides" id="slider1">
+
+</ul><!-- end slideshow -->
+
+<div id="mobile-home"><img src="img/logo.svg">
+
+<h1>DETROIT'S BACHELOR PARTY HEADQUARTERS</h1>
+
+</div>
+
+
+</div>
+
+
+<script src="js/responsiveslides.js"></script>
+<script src="js/slideshowscript.js"></script>
