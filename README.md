@@ -1,5 +1,4 @@
 # Bouzouki
-Code repository for the Bouzouki website
 
 http://bouzoukigreektown.com
 
