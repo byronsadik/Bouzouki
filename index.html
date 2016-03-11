@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html ng-app='bouzoukiApp'>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,15 +12,18 @@
         <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
         <script src="js/picturefill.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/angular-script.js"></script>
     </head>
 
 
 
-    <body>
+    <body ng-controller='indexController'>
         <div id="container"> <!-- main container all up in this piece -->
 
-
-            <?php
+        <div ng-view></div>
+           <!--  <?php
 
                 // 1. Define an array of allowed $_GET values:
                 $content = array('home', 'menu','contact','gallery','packages');
@@ -35,7 +38,7 @@
                     include ("pages/home.php"); 	
                 }
 
-            ?>
+            ?> -->
 
 
         </div> <!--  end main container  -->
@@ -49,21 +52,21 @@
         <!-- navigation  -->
         <nav>
             <ul class="navbar">
-                <li class="navselection"><a href="home">HOME</a>
-                <li class="navselection"><a href="menu">MENU</a>
-                <li class="navselection"><a href="gallery">GALLERY</a>
-                <li class="navselection"><a href="VIP">VIP PACKAGES</a>
-                <li class="navselection"><a href="contact">CONTACT</a>
+                <li class="navselection"><a href="#home">HOME</a>
+                <li class="navselection"><a href="#menu">MENU</a>
+                <li class="navselection"><a href="#gallery">GALLERY</a>
+                <li class="navselection"><a href="#vip">VIP PACKAGES</a>
+                <li class="navselection"><a href="#contact">CONTACT</a>
             </ul>
         </nav>
 
 
         <nav id="swipenav">
             <ul class="navbar">
-                <li class="navselection"><a href="home">HOME</a>
-                <li class="navselection"><a href="menu">MENU</a>
-                <li class="navselection"><a href="VIP">VIP PACKAGES</a
-                <li class="navselection"><a href="contact">CONTACT</a>
+                <li class="navselection"><a href="#home">HOME</a>
+                <li class="navselection"><a href="#menu">MENU</a>
+                <li class="navselection"><a href="#VIP">VIP PACKAGES</a
+                <li class="navselection"><a href="#contact">CONTACT</a>
             </ul>
         </nav>
 
@@ -81,7 +84,7 @@
         <div id="logo">
             <img src="img/logo2.png" />
         </div>
-        
+
         <div id="blackbar"></div>
         <div class="pinkline bottom"></div>
 
