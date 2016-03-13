@@ -1,5 +1,6 @@
 # Bouzouki
 
+http://byronsadik.com/Bouzouki
 
 This is a repository for the website I created for Bouzouki, a strip club in Detroit, Michigan. This is the only site I can confidently say I've designed, which only looks good because of the high-quality environment shots.
 
