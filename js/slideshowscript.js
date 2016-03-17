@@ -101,12 +101,12 @@ var desktop_bg = '\
   </li>\
   ';
   
-		if($(window).width() <= 800){
-  	 $(".rslides").append(mobile_bg); 
-	 }
-	else{
-	$(".rslides").append(desktop_bg);
-	}
+	// 	if($(window).width() <= 800){
+ //  	 $(".rslides").append(mobile_bg); 
+	//  }
+	// else{
+	// $(".rslides").append(desktop_bg);
+	// }
 
 	$("#slider1").responsiveSlides({
         auto: true,
